@@ -8,7 +8,7 @@ import { Homepage } from "./Main";
 import Avatar from "@mui/material/Avatar";
 import { About } from "./About";
 import Typography from "@mui/material/Typography";
-
+import { Contact } from "./Contact";
 export default function App() {
   const history = useHistory();
   return (
@@ -36,7 +36,7 @@ export default function App() {
             <Button onClick={() => history.push("/contact")} color="inherit">
               Contact
             </Button>
-            <Button onClick={() => history.push("/Resume")} color="inherit">
+            <Button href="https://drive.google.com/file/d/1CHIkQu1K6OPonqENB-_F5v4wJsy6rOVb/view?usp=sharing" target="_blank" color="inherit">
               Resume
             </Button>
           </div>
@@ -55,18 +55,10 @@ export default function App() {
         <Route path="/contact">
           <Contact />
           </Route>
-          <Route path="/Resume">
-          <Resume />
-        </Route>
+         
       </Switch>
     </div>
   );
 }
 
-function Contact() {
-  return <h1>Contact</h1>;
-}
-function Resume() {
-  return <h1>Resume</h1>;
-}
 

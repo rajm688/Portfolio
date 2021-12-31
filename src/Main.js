@@ -4,7 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
-import Button from "@mui/material/Button";
 export function Homepage() {
   return (
     <div className="main">
@@ -15,10 +14,10 @@ export function Homepage() {
             image="https://cdn2.hubspot.net/hubfs/410369/BuySell%20Ads%20-%20How%20to%20advertise%20to%20developers%20V02-01%20%281%29.png"
             alt="green iguana" />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div">
+          <Typography style={{fontSize:"22px", fontWeight:"bold", textAlign:"justify"}} variant="body2" color="text.secondary">
               Full Stack Developer
-            </Typography>
-            <Typography style={{fontSize:"15px", fontWeight:"bold", textAlign:"justify"}} variant="body2" color="text.secondary">
+            </Typography> <br/>
+            <Typography style={{fontSize:"18px", fontWeight:"bold", textAlign:"justify"}} variant="body2" color="text.secondary">
             &nbsp; &nbsp; &nbsp; &nbsp; Goal-oriented Web Developer brings strong commitment to
               collaboration and solutions-oriented problem-solving. Use various
               web design packages to develop custom-crafted, customer-focused
@@ -26,9 +25,9 @@ export function Homepage() {
               experience, usability and speed Lends detailed knowledge of SEO to
               increase visibility.
             </Typography>
-            <Button style={{ margin: "10px" }} variant="contained">
+            {/* <Button style={{ margin: "10px" }} variant="contained">
             hire Me
-            </Button>
+            </Button> */}
           </CardContent>
         </CardActionArea>
       </Card>

@@ -5,7 +5,7 @@
     border-radius: 20px;
 }
 body{
-    background-image: linear-gradient(rgb(169, 213, 248), rgb(217, 245, 252));
+    background-image: linear-gradient(rgb(147, 202, 247), rgb(217, 245, 252));
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -15,11 +15,19 @@ body{
 }
 .links{
   margin: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-end;
+  align-items: center;
 }
 .about{
   margin:50px 100px;
+}
+.profile{
+  width: 200px;
+  border-radius: 250px;
+  border: 8px solid white;
+}
+.contact{
+  margin: 20px;
 }

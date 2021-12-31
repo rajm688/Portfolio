@@ -1,65 +1,10 @@
 import * as React from "react";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
 export function About() {
   return (
     <div>
-      <div className="links">
-
-        <IconButton aria-label="delete">
-          <PhoneAndroidIcon />
-          <Typography
-            style={{
-              display: "inline",
-              fontSize: "15px",
-              fontWeight: "bold",
-              textAlign: "justify",
-            }}
-            variant="body2"
-            color="text.secondary"
-          >
-            +91-965 925 6401
-          </Typography>
-        </IconButton>
-
-        <IconButton aria-label="delete">
-          <EmailIcon />
-          <Typography
-            style={{
-              display: "inline",
-              fontSize: "15px",
-              fontWeight: "bold",
-              textAlign: "justify",
-            }}
-            variant="body2"
-            color="text.secondary"
-          >
-            rajkumarm688@gmail.com
-          </Typography>
-        </IconButton>
-
-        <IconButton aria-label="delete">
-          {" "}
-          <GitHubIcon />
-          <Typography
-            style={{
-              display: "inline",
-              fontSize: "15px",
-              fontWeight: "bold",
-              textAlign: "justify",
-            }}
-            variant="body2"
-            color="text.secondary"
-          >
-            GitHub
-          </Typography>
-        </IconButton>
-      </div>
       <div className="about">
         <Typography
           style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
@@ -82,7 +27,7 @@ export function About() {
           Development... anytime, anywhere.
         </Typography>
         <br />
-
+        <br />
         <Typography
           style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
           variant="h1"
@@ -110,6 +55,7 @@ export function About() {
           Communication Engineering and stared learning programming on Full Stack Developer
         </Typography>
         <br />
+        <br />
         <Typography
           style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
           variant="h1"
@@ -135,6 +81,7 @@ export function About() {
           <Chip label="Python" variant="outlined" />
           <Chip label="Jquery" variant="outlined" />
         </Stack>
+        <br />
         <br />
         <Typography
           style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
