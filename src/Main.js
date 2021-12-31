@@ -5,7 +5,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 import Button from "@mui/material/Button";
-
 export function Homepage() {
   return (
     <div className="main">
@@ -28,7 +27,7 @@ export function Homepage() {
               increase visibility.
             </Typography>
             <Button style={{ margin: "10px" }} variant="contained">
-              Resume
+            hire Me
             </Button>
           </CardContent>
         </CardActionArea>

@@ -4,7 +4,7 @@
     height: 70%;
     border-radius: 20px;
 }
-.app{
+body{
     background-image: linear-gradient(rgb(169, 213, 248), rgb(217, 245, 252));
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,4 +12,14 @@
 }
 .navbtn{
   margin-left: auto;
+}
+.links{
+  margin: 10px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+.about{
+  margin:50px 100px;
 }
