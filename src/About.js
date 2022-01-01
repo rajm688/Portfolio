@@ -2,6 +2,7 @@ import * as React from "react";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import Tooltip from '@mui/material/Tooltip';
 export function About() {
   return (
     <div>
@@ -13,7 +14,7 @@ export function About() {
           gutterBottom
           color="text.secondary"
         >
-          Hello there !!!
+          Greetings,
         </Typography>
         <Typography
           style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
@@ -33,7 +34,7 @@ export function About() {
           gutterBottom
           color="text.secondary"
         >
-          Basic Information
+        {"< Basic  Information />"}
         </Typography>
         <Typography
           style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
@@ -48,7 +49,7 @@ export function About() {
           variant="body2"
           color="text.secondary"
         >
-          Bachelor in Electronics and Communication Engineering and Always on
+          Bachelor in Electronics and Communication Engineering, Always on
           the lookout for new and exciting ways to leverage Web Development to
           create unforgettable experiences and impressions.
         </Typography>
