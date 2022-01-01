@@ -64,7 +64,7 @@ export function About() {
           Languages and Libraries
         </Typography>{" "}
         <br />
-        <Stack direction="row" spacing={2} flexWrap="wrap" gap="10px">
+        <Stack className="chip" direction="row" spacing={2} flexWrap="wrap" gap="10px">
           <Chip label="HTML 5" />
           <Chip label="CSS 3" />
           <Chip label="JavaScript" />
