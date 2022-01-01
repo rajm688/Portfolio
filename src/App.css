@@ -1,47 +1,58 @@
-.main{
-  margin:20px auto 10px auto ;
-    width: 80%;
-    height: 70%;
-    border-radius: 20px;
+.main {
+  margin: 20px auto 10px auto;
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
 }
-.body{
+.body {
   margin: 0;
-    background-image: linear-gradient(45deg, #79d4ff 30%, #d9fbff 90%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+  background-image: linear-gradient(45deg, #79d4ff 30%, #d9fbff 90%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
-.appbarstyle{ background: linear-gradient(45deg, #1db7ff 30%, #3ae7fa 90%);
+
+.appbarstyle {
+  background: linear-gradient(45deg, #1db7ff 30%, #3ae7fa 90%);
   border: 0;
   border-radius: 3;
-  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
   color: white;
   padding: 10px;
 }
-.navbtn{
+.navbtn {
   margin-left: auto;
 }
-.links{
+.links {
   margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
 }
-.about{
-  margin:50px 100px 0 100px;
+.about {
+  margin: 50px 100px 0 100px;
 }
-.profile{
+.profile {
   width: 200px;
   border-radius: 250px;
   border: 8px solid white;
 }
-.contact{
+.contact {
   margin: 20px;
 }
-.Projects{
+.Projects {
   display: flex;
   flex-wrap: wrap;
-  gap:10px;  
+  gap: 10px;
   margin: 30px;
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(5deg, 5deg);
+  }
+  100% {
+    transform: skew(-5deg, -5deg);
+  }
 }

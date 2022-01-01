@@ -20,11 +20,9 @@ export function About() {
           variant="body2"
           color="text.secondary"
         >
-          &nbsp;Welcome to my personal website, here you
-          will have all the necessary information about me, my work, my hobbies
-          and what makes me unique as a person. Always focused on creating
-          remarkable experiences and amazing impressions through Web
-          Development... anytime, anywhere.
+          Welcome to my personal website, where you can learn everything you
+          need to know about me, my profession and what makes me special as a
+          person.
         </Typography>
         <br />
         <br />
@@ -42,17 +40,17 @@ export function About() {
           variant="body2"
           color="text.secondary"
         >
-          &nbsp;I,m a beginner in Full stack Developer
-          Based on Tamil Nadu, India.
-        </Typography>
+          Full stack Developer Based on Tamil Nadu, India.
+        </Typography>{" "}
         <br />
         <Typography
           style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
           variant="body2"
           color="text.secondary"
         >
-          &nbsp;I am a Bachelor in Electronics and
-          Communication Engineering and stared learning programming on Full Stack Developer
+          Bachelor in Electronics and Communication Engineering and Always on
+          the lookout for new and exciting ways to leverage Web Development to
+          create unforgettable experiences and impressions.
         </Typography>
         <br />
         <br />
@@ -64,8 +62,8 @@ export function About() {
           color="text.secondary"
         >
           Languages and Libraries
-        </Typography>
-
+        </Typography>{" "}
+        <br />
         <Stack direction="row" spacing={2} flexWrap="wrap" gap="10px">
           <Chip label="HTML 5" />
           <Chip label="CSS 3" />
@@ -91,7 +89,8 @@ export function About() {
           color="text.secondary"
         >
           Tools and Softwares
-        </Typography>
+        </Typography>{" "}
+        <br />
         <Stack direction="row" spacing={2} flexWrap="wrap" gap="10px">
           <Chip label="VS Code" />
           <Chip label="Git" />

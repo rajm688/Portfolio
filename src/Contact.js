@@ -20,7 +20,7 @@ export function Contact() {
           variant="body2"
           color="text.secondary"
         >
-          I would Love to hear from you..!!!
+         I'd be delighted to hear from you..
         </Typography>
         <img
           className="profile"
@@ -28,13 +28,17 @@ export function Contact() {
           aalt="Rajkumar"
         />
         <Typography
-          style={{margin:"20px",width:"50%", fontSize: "25px", fontWeight: "bold", textAlign: "justify" }}
+          style={{
+            margin: "20px",
+            width: "50%",
+            fontSize: "25px",
+            fontWeight: "bold",
+            textAlign: "justify",
+          }}
           variant="body2"
           color="text.secondary"
         >
-          I am Raj, Web developer from
-          India. I enjoy building beautiful and functional applications on the
-          web and natively, to solve existing problems in an intuitive way.
+         Raj here, an Indian web developer. I adore creating beautiful and functional webpages that intuitively solve problems.
         </Typography>
         <IconButton aria-label="Phone">
           <PhoneAndroidIcon />
@@ -67,6 +71,7 @@ export function Contact() {
         </IconButton>
         <IconButton
           href="https://www.linkedin.com/in/rajkumar-murugesan-b7065495/"
+          target="_blank"
           aria-label="LinkedIn"
         >
           <LinkedInIcon />

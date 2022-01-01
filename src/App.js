@@ -15,8 +15,6 @@ import Paper from "@mui/material/Paper";
 import { useState } from "react";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 export default function App() {
   const [theme, settheme] = useState("light");
   const darkTheme = createTheme({
@@ -32,6 +30,7 @@ export default function App() {
           <AppBar className="appbarstyle" position="static">
             <Toolbar variant="dense">
               <Avatar
+              className="img"
                 style={{ margin: "15px" }}
                 alt="Travis Howard"
                 src="https://avatars.githubusercontent.com/u/90443069?v=4"
@@ -40,7 +39,6 @@ export default function App() {
                 Rajkumar Murugesan
               </Typography>
               <div className="navbtn">
-             
                 <Button onClick={() => history.push("/")} color="inherit">
                   Home
                 </Button>
