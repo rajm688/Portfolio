@@ -3,15 +3,13 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
 export function Homepage() {
   return (
     <div className="main">
-      <Card sx={{ width: "80%", height: "90%", margin: "auto" }}>
-        <CardActionArea>
+      <Card sx={{ width: "90%", margin: "55px auto 10px auto" }}>
           <CardMedia
             component="img"
-            image="https://cdn2.hubspot.net/hubfs/410369/BuySell%20Ads%20-%20How%20to%20advertise%20to%20developers%20V02-01%20%281%29.png"
+            image="https://jusmarktech.com/public/a/images/pages/web_development.gif"
             alt="green iguana" />
           <CardContent>
           <Typography style={{fontSize:"22px", fontWeight:"bold", textAlign:"justify"}} variant="body2" color="text.secondary">
@@ -29,7 +27,6 @@ export function Homepage() {
             hire Me
             </Button> */}
           </CardContent>
-        </CardActionArea>
       </Card>
     </div>
   );

@@ -1,14 +1,22 @@
 .main{
-  margin:10px auto 10px auto ;
-    width: 75%;
+  margin:20px auto 10px auto ;
+    width: 80%;
     height: 70%;
     border-radius: 20px;
 }
-body{
-    background-image: linear-gradient(rgb(147, 202, 247), rgb(217, 245, 252));
+.body{
+  margin: 0;
+    background-image: linear-gradient(45deg, #79d4ff 30%, #d9fbff 90%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+.appbarstyle{ background: linear-gradient(45deg, #1db7ff 30%, #3ae7fa 90%);
+  border: 0;
+  border-radius: 3;
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+  color: white;
+  padding: 10px;
 }
 .navbtn{
   margin-left: auto;
@@ -21,7 +29,7 @@ body{
   align-items: center;
 }
 .about{
-  margin:50px 100px;
+  margin:50px 100px 0 100px;
 }
 .profile{
   width: 200px;
@@ -30,4 +38,10 @@ body{
 }
 .contact{
   margin: 20px;
+}
+.Projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;  
+  margin: 30px;
 }
