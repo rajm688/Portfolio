@@ -2,13 +2,14 @@ import * as React from "react";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Tooltip from '@mui/material/Tooltip';
 export function About() {
+  const title = { fontSize: "30px", fontWeight: "bold", textAlign: "justify" };
+  const text = { fontSize: "20px", fontWeight: "bold", textAlign: "justify" };
   return (
     <div>
       <div className="about">
         <Typography
-          style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
+          style={title}
           variant="h1"
           component="div"
           gutterBottom
@@ -16,11 +17,7 @@ export function About() {
         >
           Greetings,
         </Typography>
-        <Typography
-          style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
-          variant="body2"
-          color="text.secondary"
-        >
+        <Typography style={text} variant="body2" color="text.secondary">
           Welcome to my personal website, where you can learn everything you
           need to know about me, my profession and what makes me special as a
           person.
@@ -28,29 +25,21 @@ export function About() {
         <br />
         <br />
         <Typography
-          style={{ fontSize: "30px", fontWeight: "bold", textAlign: "justify" }}
+          style={title}
           variant="h1"
           component="div"
           gutterBottom
           color="text.secondary"
         >
-        {"< Basic  Information />"}
+          {"< Basic  Information />"}
         </Typography>
-        <Typography
-          style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
-          variant="body2"
-          color="text.secondary"
-        >
+        <Typography style={text} variant="body2" color="text.secondary">
           Full stack Developer Based on Tamil Nadu, India.
         </Typography>{" "}
         <br />
-        <Typography
-          style={{ fontSize: "20px", fontWeight: "bold", textAlign: "justify" }}
-          variant="body2"
-          color="text.secondary"
-        >
-          Bachelor in Electronics and Communication Engineering, Always on
-          the lookout for new and exciting ways to leverage Web Development to
+        <Typography style={text} variant="body2" color="text.secondary">
+          Bachelor in Electronics and Communication Engineering, Always on the
+          lookout for new and exciting ways to leverage Web Development to
           create unforgettable experiences and impressions.
         </Typography>
         <br />
@@ -65,7 +54,13 @@ export function About() {
           Languages and Libraries
         </Typography>{" "}
         <br />
-        <Stack className="chip" direction="row" spacing={2} flexWrap="wrap" gap="10px">
+        <Stack
+          className="chip"
+          direction="row"
+          spacing={2}
+          flexWrap="wrap"
+          gap="10px"
+        >
           <Chip label="HTML 5" />
           <Chip label="CSS 3" />
           <Chip label="JavaScript" />

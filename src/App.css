@@ -3,8 +3,7 @@
   width: 80%;
   height: 70%;
   border-radius: 20px;
-  animation: scaling .5s steps(30)  1;
-
+  animation: scaling 0.5s steps(30) 1;
 }
 .body {
   margin: 0;
@@ -12,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-
 }
 
 .appbarstyle {
@@ -36,26 +34,45 @@
 .about {
   margin: 50px 20% 0 20%;
   text-align: justify;
-
 }
 @keyframes scaling {
-  0%{ transform: scale(0.1) ;}
-  10%{ transform: scale(0.2);}
-  20%{ transform: scale(0.3);}
-  30%{ transform: scale(0.4);}
-  40%{ transform: scale(0.5);}
-  50%{ transform: scale(0.6);}
-  60%{ transform: scale(0.7);}
-  70%{ transform: scale(0.8);}
-  80%{ transform: scale(0.9);}
-  100%{ transform: scale(1) ;}
+  0% {
+    transform: scale(0.1);
+  }
+  10% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(0.3);
+  }
+  30% {
+    transform: scale(0.4);
+  }
+  40% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .profile {
   width: 200px;
   border-radius: 250px;
   border: 8px solid white;
-  animation: scaling .3s steps(30)  1;
+  animation: scaling 0.3s steps(30) 1;
 }
 .contact {
   margin: 20px;
@@ -65,6 +82,11 @@
   flex-wrap: wrap;
   gap: 10px;
   margin: 30px;
-
 }
-
+.notfound {
+  width: 80%;
+  margin: 10px 20% 0 20%;
+}
+.notfound > img {
+  width: 70%;
+}

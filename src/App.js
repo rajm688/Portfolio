@@ -15,14 +15,20 @@ import Paper from "@mui/material/Paper";
 import { useState } from "react";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import { Notfound } from "./Notfound";
+// import ends here
+
 export default function App() {
+  //hooks used here
   const [theme, settheme] = useState("light");
+  const history = useHistory();
+
   const darkTheme = createTheme({
     palette: {
       mode: theme,
     },
   });
-  const history = useHistory();
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Paper className="body" elevation={3}>
@@ -30,9 +36,9 @@ export default function App() {
           <AppBar className="appbarstyle" position="static">
             <Toolbar variant="dense">
               <Avatar
-              className="img"
+                className="img"
                 style={{ margin: "15px" }}
-                alt="Travis Howard"
+                alt="Rajkumar"
                 src="https://avatars.githubusercontent.com/u/90443069?v=4"
               />
               <Typography variant="h6" color="inherit" component="div">
@@ -58,7 +64,7 @@ export default function App() {
                   Contact
                 </Button>
                 <Button
-                  href="https://drive.google.com/file/d/1DulcRm35UNwmpIuG-8roy41KNihFduiI/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1sAxJo9PuNuvFaAfHfJRg0QzB4xSZc0fR/view?usp=sharing"
                   target="_blank"
                   color="inherit"
                 >
@@ -75,6 +81,8 @@ export default function App() {
               </div>
             </Toolbar>
           </AppBar>
+          {/* routing Switch statement starts here */}
+          
           <Switch>
             <Route exact path="/">
               <Homepage />
@@ -87,6 +95,9 @@ export default function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="**">
+              <Notfound />
             </Route>
           </Switch>
         </div>

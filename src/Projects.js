@@ -21,7 +21,8 @@ export function Projects() {
     },
     {
       name: "Thirukkural API",
-      Details: "Collection of thirukkurals ordered by the number chosen from the API",
+      Details:
+        "Collection of thirukkurals ordered by the number chosen from the API",
       Tools: "Javascript DOM",
       link: "https://findmythirukkural.netlify.app/",
     },
@@ -50,7 +51,7 @@ export function Projects() {
           gutterBottom
           color="text.secondary"
         >
-          My Initiatives...
+          My Initiatives
         </Typography>
         <Typography
           style={{ fontSize: "18px", fontWeight: "bold", textAlign: "justify" }}
