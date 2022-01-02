@@ -78,7 +78,13 @@ export function Projects() {
 function ProjectDetails({ name, Details, Tools, link }) {
   return (
     <div className="trans">
-      <Card sx={{ width: "200px", height: "250px" }}>
+      <Card
+        sx={{
+          width: "200px",
+          height: "250px",
+          background: "linear-gradient(45deg, #3f7afa 30%, #05cdff 50%)",
+        }}
+      >
         <CardContent>
           <Typography variant="h6" component="div">
             {name}
@@ -87,14 +93,16 @@ function ProjectDetails({ name, Details, Tools, link }) {
           <Typography sx={{ fontSize: 20 }} color="text.primary" gutterBottom>
             {Tools}
           </Typography>
-          <Typography variant="body2">
-            {Details}
-            <br />
-          </Typography>
+          <Typography variant="body2">{Details}</Typography>
         </CardContent>
         <CardActions>
-          <Button href={link} target="_blank" size="small">
-            Learn More
+          <Button
+            style={{ color: "white" }}
+            href={link}
+            target="_blank"
+            size="small"
+          >
+            <Typography variant="body2">explore</Typography>
           </Button>
         </CardActions>
       </Card>
