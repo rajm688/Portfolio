@@ -25,7 +25,7 @@ export function Contact() {
         <img
           className="profile"
           src="https://avatars.githubusercontent.com/u/90443069?v=4"
-          aalt="Rajkumar"
+          alt="Rajkumar"
         />
         <Typography
           style={{
